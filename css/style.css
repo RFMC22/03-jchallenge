@@ -1,0 +1,129 @@
+:root{
+  --moderateviolet: hsl(263, 55%, 52%);
+  --darkgrayish: hsl(217, 19%, 35%);
+  --darkblackish: hsl(219, 29%, 14%);
+  --white: hsl(0, 0%, 100%);
+  --lightgray: hsl(0, 0%, 81%);
+  --lightgrayish: hsl(210, 46%, 95%);
+}
+*{
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 13px;
+}
+main{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #edf2f8;
+}
+section{
+  width: 1110px;
+  height: 572px;
+  display: grid;
+  grid-template: repeat(2,1fr) / repeat(4,1fr);
+  gap: 24px 30px;
+}
+.card{
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card1{
+  grid-column: 1 / 3;
+  background-color: var(--moderateviolet);
+  position: relative;
+}
+#img{
+  position: absolute;
+  top: 0;
+  right: 70px;
+  border: none;
+  z-index: 1;
+}
+.card2{
+  background-color: var(--darkgrayish);
+}
+.card3{
+  background-color: var(--white);
+  grid-column: 4;
+  grid-row: 1 / 3;
+}
+.card4{
+  background-color: var(--white);
+}
+.card5{
+  background-color: var(--darkblackish);
+  grid-column: 2 / 4;
+}
+.content{
+  width: 89%;
+  height: 85%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.top{
+  width: 100%;
+  height: 53px;
+  display: flex;
+}
+.top img{
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+}
+.info{
+  margin-left: 15px;
+  width: 100%;
+  height: 30px;
+}
+.info h2{
+  color: white;
+  font-weight: 500;
+}
+.info p{
+  color: var(--lightgray);
+  font-size: 11.5px;
+}
+.center{
+  width: 100%;
+  height: 90.7px;
+  position: relative;
+  z-index: 3;
+}
+.center p{
+  color: var(--white);
+  font-weight: 600;
+  font-size: 20px;
+}
+.bottom{
+  width: 100%;
+}
+.bottom p{
+  color: var(--lightgray);
+}
+.card1 img{
+  border: 2px solid #a97ee7;
+}
+.card5 img{
+  border: 2px solid var(--moderateviolet);
+}
+.card3 h2{
+  color: var(--darkgrayish);
+}
+.card3 .center p{
+  color: var(--darkgrayish);
+}
+.card4 h2{
+  color: var(--darkgrayish);
+}
+.card4 .center p{
+  color: var(--darkgrayish);
+  width: 80%;
+}
